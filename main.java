@@ -1,4 +1,9 @@
-import java.util.Scanner;
+/* Tim Johnson 
+ * 10/26/17
+ * Lab 3
+
+
+*/import java.util.Scanner;
 
 public class main {
 
@@ -10,11 +15,13 @@ public class main {
 		System.out.println("Learn your squares and cubes!");
 
 		while (repeat) {
-			System.out.print("\nEnter an integer: ");
-			mathTable.printResults(mathTable.getUserInput(sc));
+			System.out.print("\nEnter an integer: "); // prompt user for an integer
+			
+			mathTable.printResults(mathTable.getUserInput(sc)); // get & validate user input
+																// using the MathTable Class
 
 			System.out.println("\nContinue? (y/n)");
-			repeat = mathTable.repeatYesNo(sc); // ask if user wants to continue
+			repeat = mathTable.repeatYesNo(sc); // ask if user wants to continue, set repeat 
 		}
 
 		sc.close();
